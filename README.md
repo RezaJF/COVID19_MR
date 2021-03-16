@@ -6,7 +6,7 @@ Script for generating PRS scores for the collaborative COVID-19 research.
 Please note that the variant IDs in the target BED shoud follow `CHR(numeric):BP(numeric)` [i.e. `19:971949`].
 If the target BED contains the rsIDs as variant identifier, update the IDs using PLINK 2.00:
 
-``` plink2 --bfile [target_BED] --set-all-var-ids '@:#' --make-bed --out [modified_target_BED] ```
+``` plink2 --bfile [target_BED] --snps-only --set-all-var-ids '@:#' --make-bed --out [modified_target_BED] ```
 
 
 --------------------------------------
