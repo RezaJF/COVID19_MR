@@ -34,7 +34,7 @@ cat list_of_summary_statistic.txt | while read i
 
 
 		${PATH_to_PRSice} \
-				--A1 ALT \
+		--A1 ALT \
                	--A2 REF \
                	--bar-levels 1e-40,1e-30,1e-20,1e-10,1e-09,1e-08,1e-07,1e-06,1e-05,0.0001,0.0002,0.0005,0.001,0.002,0.005,0.01,0.05,0.1,1 \
                	--base ${i}.assoc \
