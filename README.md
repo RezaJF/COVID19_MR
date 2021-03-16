@@ -21,11 +21,11 @@ PLINK 2.00 or higher
 ## Basic usage
 
 ```bash
-git clone https://github.com/RezaJF/PolyElastic-cPRS.git
+git clone https://github.com/RezaJF/COVID19_PRS.git
 
-cd PolyElastic-cPRS
+cd COVID19_PRS
 
-./cPRS_generator.sh [PATH_to_PRSice] [PATH_to_imputed_BEDs] [OUTPUT_DIRECTORY]
+./PRS_calculation.sh [PATH_to_PRSice] [PATH_to_imputed_BEDs] [OUTPUT_DIRECTORY]
 ```
 - For accessing accompanying summary statistic data, please contact directly!
 
