@@ -63,4 +63,8 @@ cat list_of_summary_statistic.txt | while read i
 rm ${i}.assoc xx
 gzip ${i}
 
+
 	done
+	
+mkdir PRS_scores
+mv *_prs.* PRS_scores
