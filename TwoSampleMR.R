@@ -39,7 +39,7 @@ outcome_dat <- read_outcome_data(
   samplesize_col = "all_meta_sample_N",
   min_pval = 1e-8
 ) %>% 
-  mutate(outcome = "severe_covid_A1")
+  mutate(outcome = "severe_covid_A2")
 
 
 # Harmonize data
