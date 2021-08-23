@@ -1,4 +1,4 @@
-# COVID19_PRS
+# COVID19 MR project
 Script for generating the PRS scores & Mendelian Randomisation analysis for the collaborative COVID-19 research.
 
 ## NOTE
