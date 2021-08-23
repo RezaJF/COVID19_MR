@@ -6,8 +6,6 @@ library(TwoSampleMR)
 library(MRPRESSO)
 
 # Exposure data for all SNPs p < 1e-8
-#exposure_sumstats <- "/Volumes/BIOBANK/Medication_intake_summary_statistics/23_medication-taking_GWAS_summary_statistics/B01A_summary.txt"
-#exposure_sumstats <- "/Volumes/BIOBANK/Medication_intake_summary_statistics/psychiatric_genomic_consortium/Cannabis_ICC_23andmetop_UKB_het.txt.gz"
 exposure_sumstats <- "/Volumes/BIOBANK/Medication_intake_summary_statistics/psychiatric_genomic_consortium/opioid-exposed_vs._opioid-unexposed_controls_in_European-ancestry_cohorts.txt.gz"
 expo_sumstats <- fread(exposure_sumstats)
 expo_sumstats$PHEN <- "Opioid_exposure"
@@ -26,7 +24,7 @@ exposure_dat <- format_data(expo_sumstats,
 
 # Outcome data
 outcome_sumstats <- "/Volumes/BIOBANK/ldsc/Summary_statistics/HGI_COVID-19/COVID19_HGI_A2_ALL_20201020.10k.txt.gz"
-#outcome_sumstats <- "/Volumes/BIOBANK/ldsc/Summary_statistics/HGI_COVID-19/COVID19_HGI_B1_ALL_20201020.b37.txt.gz"
+
 outcome_dat <- read_outcome_data(
   snps = exposure_dat$SNP,
   filename = outcome_sumstats,
@@ -42,7 +40,7 @@ outcome_dat <- read_outcome_data(
   min_pval = 1e-8
 ) %>% 
   mutate(outcome = "severe_covid_A1")
-  #mutate(outcome = "hospitalized_covid_B1")
+
 
 # Harmonize data
 dat <- harmonise_data(
