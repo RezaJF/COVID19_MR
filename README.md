@@ -31,5 +31,5 @@ cd COVID19_PRS
 
 ## Contact
 For more update and instructions email me at: 
-reza.jabal@einsteinmed.org or mjaf1d14@soton.ac.uk
+reza.jabal@einsteinmed.org or mjaf1d14@soton.ac.uk.
 
