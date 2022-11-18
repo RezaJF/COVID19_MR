@@ -30,4 +30,6 @@ cd COVID19_PRS
 - For accessing accompanying summary statistic data, please contact directly!
 
 ## Contact
-For more update and instructions email me at: reza.jabal@einsteinmed.org
+For more update and instructions email me at: 
+reza.jabal@einsteinmed.org or mjaf1d14@soton.ac.uk
+
